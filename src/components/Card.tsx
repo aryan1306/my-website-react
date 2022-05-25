@@ -8,7 +8,6 @@ interface ICardProps {
 	isProject?: boolean;
 	gitLink?: string;
 	url?: string;
-	motion?: any;
 }
 
 export const Card: React.FC<ICardProps> = ({
@@ -16,7 +15,6 @@ export const Card: React.FC<ICardProps> = ({
 	isProject = false,
 	title,
 	url,
-	motion,
 }) => {
 	const item = {
 		hidden: { y: 20, opacity: 0 },
